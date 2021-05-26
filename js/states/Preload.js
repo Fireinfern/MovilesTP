@@ -4,10 +4,14 @@ Preload = function(game){}
 Preload.prototype = {
 	preload:function(){
 		this.firebaseConfig = {
+			apiKey: "AIzaSyDX5FXvb14NFbB46wmy6DNagN69n0pYsp4",
 			authDomain: "fireinferndmoviles.firebaseapp.com",
-            databaseURL: "https://fireinferndmoviles-default-rtdb.firebaseio.com/",
-            projectId: "fireinferndmoviles",
-		}
+			databaseURL: "https://fireinferndmoviles-default-rtdb.firebaseio.com",
+			projectId: "fireinferndmoviles",
+			storageBucket: "fireinferndmoviles.appspot.com",
+			messagingSenderId: "1039058036216",
+			appId: "1:1039058036216:web:3848d9ea4c0391b247e20d"
+		};
 		firebase.initializeApp(this.firebaseConfig);
 
 		this.game.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
